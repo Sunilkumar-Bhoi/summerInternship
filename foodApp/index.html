@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite - Premium Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M16 2L4 8V14C4 22 16 30 16 30C16 30 28 22 28 14V8L16 2Z" fill="currentColor"/>
+                </svg>
+                <span>FreshBite</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="icon-btn" id="cartBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 3H5L6 13H16L18 6H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="7" cy="17" r="1" fill="currentColor"/>
+                        <circle cx="15" cy="17" r="1" fill="currentColor"/>
+                    </svg>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Delicious meals<br>delivered to your door</h1>
+            <p class="hero-subtitle">Fresh, healthy, and made with love. Order now and enjoy restaurant-quality food at home.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Order Now</button>
+                <button class="btn btn-secondary">View Menu</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card card-1">
+                <div class="food-icon">🍕</div>
+                <span>Pizza</span>
+            </div>
+            <div class="floating-card card-2">
+                <div class="food-icon">🍔</div>
+                <span>Burgers</span>
+            </div>
+            <div class="floating-card card-3">
+                <div class="food-icon">🍜</div>
+                <span>Noodles</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="pizza">
+                    <div class="category-icon">🍕</div>
+                    <h3>Pizza</h3>
+                    <p>24 items</p>
+                </div>
+                <div class="category-card" data-category="burgers">
+                    <div class="category-icon">🍔</div>
+                    <h3>Burgers</h3>
+                    <p>18 items</p>
+                </div>
+                <div class="category-card" data-category="sushi">
+                    <div class="category-icon">🍣</div>
+                    <h3>Sushi</h3>
+                    <p>32 items</p>
+                </div>
+                <div class="category-card" data-category="pasta">
+                    <div class="category-icon">🍝</div>
+                    <h3>Pasta</h3>
+                    <p>21 items</p>
+                </div>
+                <div class="category-card" data-category="salads">
+                    <div class="category-icon">🥗</div>
+                    <h3>Salads</h3>
+                    <p>15 items</p>
+                </div>
+                <div class="category-card" data-category="desserts">
+                    <div class="category-icon">🍰</div>
+                    <h3>Desserts</h3>
+                    <p>28 items</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Items -->
+    <section class="popular">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Dishes</h2>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="pizza">Pizza</button>
+                    <button class="filter-tab" data-filter="burgers">Burgers</button>
+                    <button class="filter-tab" data-filter="sushi">Sushi</button>
+                </div>
+            </div>
+            <div class="food-grid" id="foodGrid">
+                <!-- Food items will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose FreshBite</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your food delivered in 30 minutes or less, guaranteed fresh and hot.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🍳</div>
+                    <h3>Chef-Curated</h3>
+                    <p>Every dish is prepared by professional chefs using premium ingredients.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Fresh & Healthy</h3>
+                    <p>Locally sourced ingredients, organic options, and nutritional transparency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Secure Payment</h3>
+                    <p>Multiple payment options with bank-grade security and encryption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-btn" id="closeCart">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <div class="empty-icon">🛒</div>
+                <p>Your cart is empty</p>
+                <span>Add items to get started</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span class="total-amount" id="totalAmount">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L4 8V14C4 22 16 30 16 30C16 30 28 22 28 14V8L16 2Z" fill="currentColor"/>
+                        </svg>
+                        <span>FreshBite</span>
+                    </div>
+                    <p>Delivering happiness, one meal at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FreshBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

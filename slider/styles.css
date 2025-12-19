@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.slider {
+    border: 10px solid black;
+    display: inline-block;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+img {
+    margin-bottom: 0;
+    height: 500px;
+    width: 800px;
+}
+
+.prev {
+left:20px;
+}
+
+.next {
+    right:20px;
+}

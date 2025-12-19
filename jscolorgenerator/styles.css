@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(201, 199, 199); 
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    align-items:center;
+}
+
+.wrapper{
+    background-color: white;
+    width:560px;
+    height:200px; 
+    display: flex;
+    flex-direction:row ;
+    overlay: none;
+    box-shadow: 2px 2px 2px rgb(125, 124, 124);
+    border-radius:10px;
+}
+
+.inputgroup{
+    padding:10px;
+}
+
+input{
+    font-size: 24px;
+    color:rgb(0, 255, 0);
+    border:2px solid rgb(0, 255, 0);
+    padding:2px;    
+}
+
+.left{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 0);
+}
+
+.right{
+    flex: 1; /* takes up remaining space next to .left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copy{
+    background-color: rgb(0, 255, 0);
+    font-size:24px;
+    border: none;
+    padding:3px;
+}
+
+.generate{
+    width:92%;
+    background-color: black;
+    color:white;
+    margin:10px;
+    padding:10px;  
+    font-size:20px;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+}
+#title{
+    font-weight: 600;
+    font-size: 300px;
+    top: 0px;
+    margin-bottom: 240px;
+    color:rgb(101, 101, 101);
+    position: absolute;
+}
+#time{
+    color:rgb(3, 59, 241);
+    font-size: 190px;
+    font-weight: 600;
+}

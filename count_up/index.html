@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Count Up Animation</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>COUNT UP ANIMATION</h1>
+        <div class="row">
+            <div class="box">
+                <i class="fa-solid fa-spoon"></i>
+                <h2 class="counter">400</h2>
+                <p>Meals Delivered</p>
+            </div>
+            <div class="box">
+                <i class="fa-regular fa-face-smile"></i>
+                <h2 class="counter">340</h2>
+                <p>Happy Customers</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-list-ul"></i>
+                <h2 class="counter">225</h2>
+                <p>Menu Items</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-star"></i>
+                <h2 class="counter">405</h2>
+                <p>Five Stars</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <script>
+        $(".counter").counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
+</body>
+
+</html>
